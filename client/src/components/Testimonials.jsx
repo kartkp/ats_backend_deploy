@@ -6,13 +6,13 @@ const testimonials = [
     name: 'Ken Blanchard',
     title: 'Author and Business Professional',
     quote: 'The only job security you have today is your commitment to continuous personal improvement.',
-    image: './src/assets/ken.jpg'
+    image: 'https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506378/ken_btdzcv.jpg'
   },
   {
     name: 'Jessica Hernandez',
     title: 'Researcher at the University of Washington',
     quote: 'Your resume is the chief evangelist of your career and best instrument for securing employment.',
-    image: './src/assets/jess.jpg'
+    image: 'https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506374/jess_vllxsq.jpg'
   }
 ];
 
