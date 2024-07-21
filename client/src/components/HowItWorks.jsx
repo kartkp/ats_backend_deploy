@@ -1,11 +1,10 @@
-// src/components/HowItWorks.js
 import React from 'react';
 
 const HowItWorks = () => {
   return (
     <section style={styles.section}>
       <div style={styles.leftSide}><br /><br />
-        <img src="./src/assets/gyaan.jpg" alt="How It Works" style={styles.image} /><br /><br /><br />
+        <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506365/gyaan_c2gm0h.png" alt="How It Works" style={styles.image} /><br /><br /><br />
         <h2 style={styles.text}>How It Works?!</h2><br />
         <ol style={styles.text}>
           <li>Upload Your Resume: Simply upload your resume in PDF format.</li>
@@ -22,7 +21,7 @@ const HowItWorks = () => {
           <li>Get a detailed resume review report</li>
           <li>Improve your CV with personalized tips</li><br /><br /><br />
         </ul>
-        <img src="./src/assets/score.jpg" alt="Resume Score" style={styles.rightImage} /><br /><br />
+        <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506363/score_myilwu.png" alt="Resume Score" style={styles.rightImage} /><br /><br />
         
       </div>
       
