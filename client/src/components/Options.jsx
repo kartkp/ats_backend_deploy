@@ -35,7 +35,7 @@ const Options = () => {
           onMouseLeave={handleMouseLeave}
         >
           <Link to="/score" style={styles.linkButton}><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-            <img src={'./src/assets/score.jpg'} alt="Image 1" style={styles.image} />
+            <img src={'https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506363/score_myilwu.png'} alt="Image 1" style={styles.image} />
             <div style={styles.imageText}>Find Your ATS Score</div>
           </Link>
         </div>
@@ -45,7 +45,7 @@ const Options = () => {
           onMouseLeave={handleMouseLeave}
         >
           <Link to="/sugg" style={styles.linkButton}><br></br><br></br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src={'./src/assets/ats_img00.jpg'} alt="Image 2" style={styles.image} />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src={'https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506357/ats_img00_m17shv.avif'} alt="Image 2" style={styles.image} />
             <div style={styles.imageText}>Suggestions</div>
           </Link>
         </div>
@@ -55,7 +55,7 @@ const Options = () => {
           onMouseLeave={handleMouseLeave}
         >
           <Link to="/bullet" style={styles.linkButton}><br></br><br></br><br></br><br></br><br></br>
-          &nbsp;&nbsp;&nbsp;&nbsp;<img src={'./src/assets/robot.jpg'} alt="Image 3" style={styles.image} />
+          &nbsp;&nbsp;&nbsp;&nbsp;<img src={'https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506360/robot_oevagj.png'} alt="Image 3" style={styles.image} />
             <div style={styles.imageText}>Bullet Points</div>
           </Link>
         </div>
