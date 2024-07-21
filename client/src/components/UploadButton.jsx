@@ -3,7 +3,7 @@ import './UploadButton.css';
 
 const Hero = () => {
   const handleRedirect = () => {
-    window.location.href = './pref';
+    window.location.href = '/pref';
   };
 
   return (
