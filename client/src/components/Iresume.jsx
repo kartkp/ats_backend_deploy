@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './Iresume.css';
-import './Iresume.css';
+import { Link } from 'react-router-dom';
 
 const Ir = () => {
   const handleRedirect = () => {
@@ -10,11 +10,12 @@ const Ir = () => {
   return (
     <div className="containers">
       <div className="rectangle">
-        <button onClick={handleRedirect}> 
+      <Link activeClassName="active" to="/pref">
+        <button> 
           <label className="custom-file-upload">
-            <span className="button">Check Your Score</span>
+            <span className="button">Analyze Your Resume</span>
           </label>
-        </button>
+        </button></Link>
 
       </div>
       <div style={styles.container}><br></br><br></br><br></br>
