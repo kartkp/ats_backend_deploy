@@ -22,41 +22,41 @@ const AboutUs = () => {
       <p>We are a team CW of passionate technologists and HR professionals dedicated to making the job application process smoother and more successful for everyone. Our mission is to leverage the power of AI to help you achieve your career goals.</p><br></br><br></br>
       <div className="members">
         <div className="member">
-        <img src="./src/assets/kar01.jpg" alt="Kartikey" className="member-image" />
+        <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506373/kar01_c2gf57.png" alt="Kartikey" className="member-image" />
           <h3>Kartikey Pandey</h3>
           <p>Full-Stack Developer</p>
           <a href="https://www.linkedin.com/in/kartkp/" target="_blank" className="login-social-signup-link">
-              <img src="./src/assets/linkedd.jpg" alt="LinkedIn" className="login-social-signup-icon" />
+              <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506379/linkedd_wymap6.png" alt="LinkedIn" className="login-social-signup-icon" />
   </a>
         </div>
         <div className="member">
-          <img src="./src/assets/kar00.jpg" alt="Kartik" className="member-image" />
+          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506377/kar00_sxvt31.jpg" alt="Kartik" className="member-image" />
           <h3>Kartik Chaudhary</h3>
           <p>Full-Stack Developer</p>
           <a href="https://www.linkedin.com/in/kartik-chaudhary-496438281/" target="_blank" className="login-social-signup-link">
-          <img src="./src/assets/linkedd.jpg" alt="LinkedIn" className="login-social-signup-icon" /></a>
+          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506379/linkedd_wymap6.png" alt="LinkedIn" className="login-social-signup-icon" /></a>
         </div>
         <div className="member">
-          <img src="./src/assets/radh.jpg" alt="Radhika" className="member-image" />
+          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506358/radh_hqjw4j.jpg" alt="Radhika" className="member-image" />
           <h3>Radhika Sharma</h3>
           <p>Full-Stack Developer</p>
           <a href="https://www.linkedin.com/in/radhika-sharma-773a80273/" target="_blank" className="login-social-signup-link">
-          <img src="./src/assets/linkedd.jpg" alt="LinkedIn" className="login-social-signup-icon" /></a>
+          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506379/linkedd_wymap6.png" alt="LinkedIn" className="login-social-signup-icon" /></a>
         </div>
         <div className="member">
-          <img src="./src/assets/jahnvi.jpg" alt="Janhavi" className="member-image" />
+          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506376/jahnvi_y2sajn.jpg" alt="Janhavi" className="member-image" />
           <h3>Janhavi Singh</h3>
           <p>Full-Stack Developer</p>
           <a href="https://www.linkedin.com/in/janhavi-singh-50b2bb275/" target="_blank" className="login-social-signup-link">
-          <img src="./src/assets/linkedd.jpg" alt="LinkedIn" className="login-social-signup-icon" /></a>
+          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506379/linkedd_wymap6.png" alt="LinkedIn" className="login-social-signup-icon" /></a>
         </div>
         <div className="member">
 
-  <img src="./src/assets/avi.jpg" alt="Avdhesh" className="member-image" />
+  <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506358/avi_g2pj0t.jpg" alt="Avdhesh" className="member-image" />
           <h3>Avdhesh Upadhyay</h3>
           <p>Full-Stack Developer</p>
           <a href="https://www.linkedin.com/in/avdhesh-upadhyay-643a382b0/" target="_blank" className="login-social-signup-link">
-          <img src="./src/assets/linkedd.jpg" alt="LinkedIn" className="login-social-signup-icon" /></a>
+          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506379/linkedd_wymap6.png" alt="LinkedIn" className="login-social-signup-icon" /></a>
         </div>
       </div>
     </section>
