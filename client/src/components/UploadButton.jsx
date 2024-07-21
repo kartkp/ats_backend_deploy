@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './UploadButton.css';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const handleRedirect = () => {
@@ -8,13 +9,13 @@ const Hero = () => {
 
   return (
     <div className="containers">
-      <div className="rectangle">
-        <button onClick={handleRedirect}> 
+      <div className="rectangle"><Link activeClassName="active" to="/pref">
+        <button> 
           <label className="custom-file-upload">
             <span className="button">Analyze Your Resume</span>
           </label>
-        </button>
-
+        </button></Link>
+    
       </div>
     </div>
   );
@@ -22,4 +23,3 @@ const Hero = () => {
 
 
 export default Hero;
-
