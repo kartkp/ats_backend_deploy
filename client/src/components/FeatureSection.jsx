@@ -1,4 +1,3 @@
-// src/components/FeatureSection.js
 import React from 'react';
 
 const FeatureSection = () => {
@@ -13,14 +12,14 @@ const FeatureSection = () => {
       </ul>
       <div style={styles.container}>
       <img 
-        src="./src/assets/robot.jpg" 
+        src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506360/robot_oevagj.png" 
         alt="Left Image" 
         style={styles.image}
         onMouseOver={(e) => e.currentTarget.style.transform = styles.imageHover.transform}
         onMouseOut={(e) => e.currentTarget.style.transform = 'none'}
       />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <video
-        src="./src/assets/new.mp4"
+        src="https://res.cloudinary.com/dnsjdvzdn/video/upload/v1721506369/new_xde2qh.mp4"
         alt="Right Video"
         style={styles.video}
         onMouseOver={(e) => e.currentTarget.style.transform = styles.imageHover.transform}
