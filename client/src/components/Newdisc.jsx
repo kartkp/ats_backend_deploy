@@ -15,14 +15,14 @@ With Resume Check, you can confidently apply knowing your resume is flawless and
 
 <div style={styles.container}>
       <img 
-        src="./src/assets/Analyzing.gif" 
+        src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506358/Analyzing_sk48dh.gif" 
         alt="Left Image" 
         style={styles.image}
         onMouseOver={(e) => e.currentTarget.style.transform = styles.imageHover.transform}
         onMouseOut={(e) => e.currentTarget.style.transform = 'none'}
       />
       <img 
-        src="./src/assets/ats_img00.jpg" 
+        src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506357/ats_img00_m17shv.avif" 
         alt="Right Image" 
         style={styles.image}
         onMouseOver={(e) => e.currentTarget.style.transform = styles.imageHover.transform}
@@ -45,13 +45,13 @@ const styles = {
         flexDirection: 'column',
       },
       content: {
-        maxWidth: '80px', // Adjust as per your design
+        maxWidth: '80px',
         margin: '0 auto',
         textAlign: 'justify',
         lineHeight: '1.6',
       },
   image: {
-    width: '500px', // Adjust width as per your design
+    width: '500px',
     height: 'auto',
     margin: '100px',
     transition: 'transform 0.8s ease-in-out',
@@ -62,10 +62,10 @@ const styles = {
   },
   container: {
     display: 'flex',
-    justifyContent: 'space-between', // or 'space-around' or 'space-evenly' based on your preference
+    justifyContent: 'space-between',
   },
   imageHover: {
-    transform: 'scale(1.04)', // Zoom effect
+    transform: 'scale(1.04)',
   },
 };
 
