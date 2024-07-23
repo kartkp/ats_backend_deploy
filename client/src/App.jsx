@@ -21,6 +21,7 @@ import Sugg from './components/Sugg';
 import Bullet from './components/Bullet';
 import Signup from './components/Signup';
 import Response from './components/Response';
+import Navhome from './components/Navhome';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -40,16 +41,8 @@ function App() {
     },
     {
     path: "/",
-    element: <><Navbar />      <Login />        
-              {/* <Header />
-              <UploadButton /><br></br><br></br><br></br><br></br>
-              <Newdisc />
-              <FeatureSection />
-              <Testimonials />
-              <HowItWorks /><br></br><br></br><br></br><br></br>
-              <Ir />
-              <AboutUs />
-              <Footer /> */}
+    element: <><Navhome />      <Login />        
+
               </>
   },
     {
