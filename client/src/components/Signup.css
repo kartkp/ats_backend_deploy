@@ -1,4 +1,4 @@
-.register-form-container {
+  .register-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +58,7 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 2%;
+    margin-left: 2.4%;
 }
   
 .register-button:hover {
