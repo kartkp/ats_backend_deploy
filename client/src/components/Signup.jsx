@@ -19,7 +19,7 @@ const Signup = () => {
     }
 
     try {
-      await axios.post("http://localhost:3001/signup", {
+      await axios.post("https://mongo-connection-2l3w.onrender.com/signup", {
         username, email, password, confirmPassword
       })
         .then(res => {
