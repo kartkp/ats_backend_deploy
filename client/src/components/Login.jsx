@@ -10,20 +10,43 @@ const Login = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
 
-  const handleSubmit = async (e) => {
+  async function submit(e) {
     e.preventDefault();
+
     try {
-      const res = await axios.post('http://localhost:3000/login', { email, password });
-      if (res.data.token) {
-        localStorage.setItem('token', res.data.token);
-        navigate('/home');
-      } else {
-        console.error('Login failed: No token received');
-      }
-    } catch (err) {
-      console.error('Login error:', err);
+      await axios.post("http://localhost:3001/", { email, password })
+        .then(res => {
+          if (res.data === "exist") {
+            navigate("/home", { state: { id: email } });
+          } else if (res.data === "notexist") {
+            alert("User has not signed up");
+          } else if (res.data === "incorrect_password") {
+            alert("Incorrect password");
+          } else {
+            alert("Error occurred. Please try again.");
+          }
+        })
+        .catch(e => {
+          alert("An error occurred. Please try again.");
+          console.log(e);
+        });
+    } catch (e) {
+      console.log(e);
     }
+  }
+
+
+
+  const guestLogin = () => {
+    const guestUsername = "guestid@gmail.com";
+    const guestPassword = "Guestpass@00";
+
+    setEmail(guestUsername);
+    setPassword(guestPassword);
+
+    handleSubmit(new Event('submit'));
   };
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -35,32 +58,32 @@ const Login = () => {
     return <Loading />;
   }
 
+
   return (
     <div><br></br><br></br><br></br>
     <div className="form-container">
-      <form onSubmit={handleSubmit} className="login-form">
-      <h2 className='login-title'>Login to cWSCAN</h2>
-          <input
-            type="name"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Username or Email"
-            required
-            className="login-input-user"
-          />
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
-            required
-            className="login-input-password"
-          />
+      <form onSubmit={submit} className="login-form">
+        <h2 className='login-title'>Login to cWSCAN</h2>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
+          required
+          className="login-input-user"
+        />
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Password"
+          required
+          className="login-input-password"
+        />
 
-          <button type="submit" className="login-button">Login</button>
-
-          <div className="login-forgot-password" onClick={() => navigate('/na')}>Forgot password ?</div>
-          <div className="login-signup">
+        <button type="submit" className="login-button">Login</button>
+        <div className="login-forgot-password" onClick={() => navigate('/na')}>Forgot password ?</div>
+        <div className="login-signup">
             <p className="login-new-user-text">New user ?</p>
             <button type="button" onClick={() => navigate('/signup')} className="login-signup-button">Signup Now</button>
           </div>
@@ -76,7 +99,7 @@ const Login = () => {
               <img src="https://static-00.iconduck.com/assets.00/linkedin-icon-256x256-k7c74t1i.png" alt="LinkedIn" className="login-social-signup-icon" />
   </a>
         </div>
-        <button type="button" onClick={() => navigate('/home')} className="login-signup-button">Guest</button>
+        <button type="button" onClick={guestLogin} className="login-signup-button" id="guest-btn">Guest</button>
       </form>
     </div></div>
   );
