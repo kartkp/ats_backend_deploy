@@ -14,7 +14,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:3001/", { email, password })
+      await axios.post("https://mongo-connection-2l3w.onrender.com/", { email, password })
         .then(res => {
           if (res.data === "exist") {
             navigate("/home", { state: { id: email } });
