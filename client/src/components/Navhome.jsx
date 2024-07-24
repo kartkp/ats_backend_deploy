@@ -66,7 +66,7 @@ const Navhome = () => {
         <Link activeClassName="active" to="/na">Services</Link>
         <Link activeClassName="active" to="/about">About Us</Link>
         <div className="dropdown">
-          <Link activeClassName="active" to="/login">Register</Link>
+          <Link activeClassName="active" to="/">Register</Link>
         </div>
       </nav>
     </header>
