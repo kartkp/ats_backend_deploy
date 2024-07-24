@@ -1,4 +1,4 @@
-  .register-form-container {
+.register-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,11 +59,22 @@
     font-size: 16px;
     cursor: pointer;
     margin-left: 2.4%;
+
 }
   
 .register-button:hover {
     background: linear-gradient(to right, #0056b3, #313536);
+    transform: scale(1.01);
 }
+
+.register-button:active {
+    background: linear-gradient(45deg, #4a90e2, #46b2d0);
+    transform: scale(0.95);
+  }
+  
+  .register-button:focus {
+    outline: none;
+  }
   
 .register-forgot-password {
     margin-top: 10px;
