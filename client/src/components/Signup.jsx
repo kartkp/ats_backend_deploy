@@ -9,9 +9,13 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
+  const [registrationStatus, setRegistrationStatus] = useState('');
+  const [IsRegisteringIn, setIsRegisteringIn] = useState(false);
 
   async function submit(e) {
     e.preventDefault();
+
+    setIsRegisteringIn(true);
 
     if (password !== confirmPassword) {
       alert("Passwords do not match");
@@ -26,7 +30,10 @@ const Signup = () => {
           if (res.data === "exist") {
             alert("User already exists");
           } else if (res.data === "notexist") {
-            navigate("/login", { state: { id: username } });
+            setRegistrationStatus("You have been registered successfully!");
+            setTimeout(() => {
+              navigate("/login", { state: { id: username } });
+            }, 2500);
           } else if (res.data === "password_mismatch") {
             alert("Passwords do not match");
           } else {
@@ -36,10 +43,15 @@ const Signup = () => {
         .catch(e => {
           alert("An error occurred. Please try again.");
           console.log(e);
+          
         });
     } catch (e) {
       console.log(e);
+      
     }
+   finally {
+    setIsRegisteringIn(false);
+  }
   }
 
   return (
@@ -79,7 +91,10 @@ const Signup = () => {
           required
           className="register-input-confirm-password"
         />
-        <button type="submit" className="register-button">Register</button>
+        <button type="submit" className="register-button">
+            {IsRegisteringIn ? "Registering..." : "Register"}
+          </button>
+        {registrationStatus && <p className="registration-success-message">{registrationStatus}</p>}
         <div className="register-social-signup">
       <p className="register-social-signup-text">May also signup with</p><br />
       <div className="register-social-signup-link">
