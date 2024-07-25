@@ -13,7 +13,7 @@ const Ir = () => {
       <Link activeClassName="active" to="/pref">
         <button> 
           <label className="custom-file-upload">
-            <span className="button">Analyze Your Resume</span>
+            <span className="button">Check Your Score</span>
           </label>
         </button></Link>
 
