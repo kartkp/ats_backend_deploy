@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <header className={`header ${scrollDirection === 'down' ? 'hidden' : ''}`}>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <a href="/" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+        <a href="/home" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
           <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506380/logo_elutqe.png" alt="cWSCAN logo" style={{ width: 65, height: 78, marginRight: 10 }} />
           <h4 style={{ ...styles.textOutline, fontFamily: "'Comic Sans MS', 'Comic Sans', cursive", margin: 0, color: '#DCE0DF' }}>cWSCAN</h4>
         </a>
