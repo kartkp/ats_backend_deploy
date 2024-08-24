@@ -75,16 +75,15 @@ IN ONLY 2 LINES MAXIMUM
 
     const atsResponse = await getGeminiResponse(atsPrompt);
     const suggestionsResponse = await getGeminiResponse(suggestionsPrompt);
+
     const summaryResponse = await getGeminiResponse(summaryPrompt);
 
-
-    const cleanedSuggestionsResponse = suggestionsResponse.replace(/\*\**/g, '').replace(/##/g, '--');
-    const cleanedSummaryResponse = summaryResponse.replace(/\*\**/g, '').replace(/##/g, '--');
+    
 
     res.json({
-      atsScore: atsResponse.trim(),
-      suggestions: cleanedSuggestionsResponse,
-      profileSummary: cleanedSummaryResponse
+      atsScore: atsResponse,
+      suggestions: suggestionsResponse,
+      profileSummary: summaryResponse
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
