@@ -78,8 +78,8 @@ IN ONLY 2 LINES MAXIMUM
     const summaryResponse = await getGeminiResponse(summaryPrompt);
 
 
-    const cleanedSuggestionsResponse = suggestionsResponse.replace(/[#*]/g, '').trim();
-    const cleanedSummaryResponse = summaryResponse.replace(/[#*]/g, '').trim();
+    const cleanedSuggestionsResponse = suggestionsResponse.replace(/\*\**/g, '').replace(/##/g, '--');
+    const cleanedSummaryResponse = summaryResponse.replace(/\*\**/g, '').replace(/##/g, '--');
 
     res.json({
       atsScore: atsResponse.trim(),
