@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Signup.css';
+import Loading from './Loading';
 
 const Signup = () => {
   const [username, setUsername] = useState('');
@@ -11,6 +12,7 @@ const Signup = () => {
   const navigate = useNavigate();
   const [registrationStatus, setRegistrationStatus] = useState('');
   const [IsRegisteringIn, setIsRegisteringIn] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   async function submit(e) {
     e.preventDefault();
@@ -53,6 +55,17 @@ const Signup = () => {
     setIsRegisteringIn(false);
   }
   }
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
 
   return (
 
