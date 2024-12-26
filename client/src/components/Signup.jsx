@@ -55,7 +55,7 @@ const Signup = () => {
   }
 
   return (
-    <div><br></br><br></br><br></br>
+
     <div className="register-form-container">
       <form onSubmit={submit} className="register-form">
         <h2 className='register-title'>Register to cWSCAN</h2>
@@ -96,7 +96,7 @@ const Signup = () => {
           </button>
         {registrationStatus && <p className="registration-success-message">{registrationStatus}</p>}
         <div className="register-social-signup">
-      <p className="register-social-signup-text">May also signup with</p><br />
+      <p className="register-social-signup-text">May also signup with</p>
       <div className="register-social-signup-link">
         <img src="https://static-00.iconduck.com/assets.00/google-icon-512x512-tqc9el3r.png" alt="Google" />
         <img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-github-1.png" alt="GitHub" />
@@ -108,7 +108,7 @@ const Signup = () => {
       <button type="button" className="register-login-button" onClick={() => navigate('/login')}>Login Now</button>
     </div>
       </form>
-    </div></div>
+    </div>
   );
 };
 
