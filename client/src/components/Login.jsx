@@ -9,12 +9,12 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
-  const [isLoggingIn, setIsLoggingIn] = useState(false); // New state for button loading
+  const [isLoggingIn, setIsLoggingIn] = useState(false);
 
   async function submit(e) {
     e.preventDefault();
 
-    setIsLoggingIn(true); // Set loading state
+    setIsLoggingIn(true);
 
     try {
       await axios.post("https://mongo-connection-2l3w.onrender.com/", { email, password })
