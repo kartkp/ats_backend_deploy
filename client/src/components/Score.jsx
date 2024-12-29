@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Kk.css';
+import './Score.css';
 
 function Score() {
   const [pdfFile, setPdfFile] = useState(null);
@@ -50,54 +50,55 @@ function Score() {
       .catch((error) => {
         setSubmitting(false);
         console.error('Error:', error);
-
       });
   };
 
   return (
     <div>
       {loading ? (
-        <div className="loading">
-          <div className="spinner"></div>
+        <div className="loading__two">
+          <div className="spinner__two"></div>
         </div>
       ) : (
-        <div className="container">
-          <h1 className="title">Find Your Resume Score</h1>
-          <form onSubmit={handleSubmit} className="form">
-            <label className="label">
+        <div className="container__two">
+          <h1 className="title__two">Find Your Resume Score</h1>
+          <form onSubmit={handleSubmit} className="form__two">
+            <label className="label__two">
               Upload Your Resume Here:
               <input
                 type="file"
                 accept=".pdf"
                 onChange={handlePdfChange}
-                className="input-file"
+                className="input-file__twoY"
                 required
               />
             </label>
             <br />
-            <label className="label">
-              Job Description:<br />
+            <label className="label__two">
+              Job Description:<br /><br />
               <textarea
+              
                 value={jobDescription}
                 onChange={handleJobDescriptionChange}
-                className="input-textarea"
                 placeholder="Job Description"
+                
                 required
               />
             </label>
             <br />
-            <label className="label">
+            
+            <label className="label__twoX">
               Job Role:
               <input
                 type="text"
                 value={jobRole}
                 onChange={handleJobRoleChange}
-                className="input-text"
+                className="input-file__two"
                 placeholder="Job Role"
               />
             </label>
             <br />
-            <button type="submit" className="submit-button" disabled={submitting}>
+            <button type="submit" className="submit-button__two" disabled={submitting}>
               {submitting ? 'Submitting...' : 'Submit'}
             </button>
           </form>
