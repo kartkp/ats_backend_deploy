@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Score.css';
 
-function Score() {
+function Bullet() {
   const [pdfFile, setPdfFile] = useState(null);
   const [jobDescription, setJobDescription] = useState('');
   const [jobRole, setJobRole] = useState('');
@@ -108,4 +108,4 @@ function Score() {
   );
 }
 
-export default Score;
+export default Bullet;
