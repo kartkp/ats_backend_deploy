@@ -30,21 +30,21 @@ const AboutUs = () => {
   </a>
         </div>
         <div className="member">
-          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506377/kar00_sxvt31.jpg" alt="Kartik" className="member-image" />
+          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1754214487/kar00_hjg3ci.jpg" alt="Kartik" className="member-image" />
           <h3>Kartik Chaudhary</h3>
           <p>Full-Stack Developer</p>
           <a href="https://www.linkedin.com/in/kartik-chaudhary-496438281/" target="_blank" className="login-social-signup-link">
           <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506379/linkedd_wymap6.png" alt="LinkedIn" className="login-social-signup-icon" /></a>
         </div>
         <div className="member">
-          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506358/radh_hqjw4j.jpg" alt="Radhika" className="member-image" />
+          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1754214489/radh_n2i5hz.jpg" alt="Radhika" className="member-image" />
           <h3>Radhika Sharma</h3>
           <p>Full-Stack Developer</p>
           <a href="https://www.linkedin.com/in/radhika-sharma-773a80273/" target="_blank" className="login-social-signup-link">
           <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506379/linkedd_wymap6.png" alt="LinkedIn" className="login-social-signup-icon" /></a>
         </div>
         <div className="member">
-          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506376/jahnvi_y2sajn.jpg" alt="Janhavi" className="member-image" />
+          <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1754214493/jahnvi_cuj5wm.jpg" alt="Janhavi" className="member-image" />
           <h3>Janhavi Singh</h3>
           <p>Full-Stack Developer</p>
           <a href="https://www.linkedin.com/in/janhavi-singh-50b2bb275/" target="_blank" className="login-social-signup-link">
