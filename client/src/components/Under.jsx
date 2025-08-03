@@ -16,7 +16,7 @@ const [isLoading, setIsLoading] = useState(true);
     <section style={styles.section}><br></br><br></br>
       <h2>We are:</h2><br></br><br></br>
       <div style={styles.imageContainer}>
-        <img src={'https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506371/under_hnoscz.png'} alt="About Us" style={styles.image} />
+        <img src={'https://res.cloudinary.com/dnsjdvzdn/image/upload/v1754215389/under_zhh69r.png'} alt="About Us" style={styles.image} />
       </div>
     </section>
   );
