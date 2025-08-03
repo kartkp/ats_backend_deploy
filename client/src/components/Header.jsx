@@ -8,7 +8,7 @@ const Header = () => {
       <br></br>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <div style={{ flex: 1 }}>
-          <h1 style={{ ...styles.textOutline, fontFamily: 'Segoe UI, sans-serif', fontWeight: 700, fontSize: '2.5rem', marginBottom: '10px' }}><img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506378/wiz_mmgmpu.png" alt="cWSCAN logo" style={{ width: 65, height: 78, marginRight: 10 }} />
+          <h1 style={{ ...styles.textOutline, fontFamily: 'Segoe UI, sans-serif', fontWeight: 700, fontSize: '2.5rem', marginBottom: '10px' }}><img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1754215390/wiz_qonzmz.png" alt="cWSCAN logo" style={{ width: 65, height: 78, marginRight: 10 }} />
             Welcome to Your Future:<br></br> AI-Powered Resume ATS Analyzer
           </h1>
           <p style={{ ...styles.textOutline, fontFamily: 'Segoe UI, sans-serif', fontWeight: 700, fontSize: '1.3rem', marginBottom: '10px' }}>
