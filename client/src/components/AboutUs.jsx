@@ -52,7 +52,7 @@ const AboutUs = () => {
         </div>
         <div className="member">
 
-  <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506358/avi_g2pj0t.jpg" alt="Avdhesh" className="member-image" />
+  <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1754215108/avi_p3okal.jpg" alt="Avdhesh" className="member-image" />
           <h3>Avdhesh Upadhyay</h3>
           <p>Full-Stack Developer</p>
           <a href="https://www.linkedin.com/in/avdhesh-upadhyay-643a382b0/" target="_blank" className="login-social-signup-link">
