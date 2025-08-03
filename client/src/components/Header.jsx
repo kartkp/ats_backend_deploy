@@ -18,7 +18,7 @@ const Header = () => {
             Resume Check: Instantly Check Your Resume
           </p>
         </div>
-        <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506358/ats_img01_iwmwfq.png" alt="Tech Background" style={{ ...styles.image, transition: 'transform 0.8s ease-in-out' }} className="zoom-image"  />
+        <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1754214489/ats_img01_lava6z.png" alt="Tech Background" style={{ ...styles.image, transition: 'transform 0.8s ease-in-out' }} className="zoom-image"  />
       </div>
     </header>
   );
