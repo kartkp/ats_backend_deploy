@@ -20,14 +20,14 @@ const Ir = () => {
       </div>
       <div style={styles.container}><br></br><br></br><br></br>
           <img 
-            src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506390/ss00_fqqmoz.png" 
+            src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1754216312/ss00_fqqmoz_rk4iye.png" 
             alt="Left Image" 
             style={styles.image}
             onMouseOver={(e) => e.currentTarget.style.transform = styles.imageHover.transform}
             onMouseOut={(e) => e.currentTarget.style.transform = 'none'}
           />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <img
-            src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506391/ss01_krhdoa.png"
+            src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1754216290/ss01_krhdoa_xurocz.png"
             alt="Right Image"
             style={styles.image}
             onMouseOver={(e) => e.currentTarget.style.transform = styles.imageHover.transform}
